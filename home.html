@@ -8,6 +8,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- my icon llogo -->
    <link rel="icon" href="img/mylogo.png">
     <!-- my css -->
@@ -48,7 +50,7 @@
 <section class="jumbotron text-center">
   <img src="img/trah-ai.jpg" alt="trah ganteng" width="200px" class="rounded-circle img-thumbnail" >
   <h1 class="display-4">Muh. Fitrah Ramadhan</h1>
-  <p class="lead">Otodidak | Software Engineer</p>
+  <p class="lead"></p>
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
     <path fill="#fff" fill-opacity="1"
       d="M0,32L48,42.7C96,53,192,75,288,74.7C384,75,480,53,576,64C672,75,768,117,864,144C960,171,1056,181,1152,176C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
@@ -58,14 +60,14 @@
 
 <!-- about -->
 <section id="about">
-<div class="container">
+<div class="container" data-aos="fade-right" data-aos-offset="250" data-aos-duration="2000">
   <div class="row mb-3">
     <div class="col text-center">
       <h2>About Me</h2>
     </div>
   </div>
   <div class="row justify-content-center fs-5 text-center">
-    <div class="col-md-4">
+    <div class="col-md-5">
       <h5>Introduction</h5>
       <p>Hi, my name is Muhammad Fitrah Ramadhan. I aspire to be a skilled software engineer. I have  great interest in the world of technology and enjoy learning about programming languages and the latest technology. I believe that with hard work and a never-give-up attitude, I can overcome any challenge that comes my way. I am constantly seeking new opportunities to grow my skills and expand my knowledge. I am exited to continue on this journey and see where it takes me. Thank you for your time. </p>
       <br>
@@ -88,7 +90,7 @@
 
     <!-- projects -->
 <section id="projects">
-  <div class="container">
+  <div class="container" data-aos="zoom-in" data-aos-offset="250" data-aos-duration="1000">
     <div class="row mb-3">
       <div class="col text-center">
          <h2>My Projects</h2>
@@ -175,6 +177,24 @@
 <footer class="bg-body-tertiary text-center">
 <p>Created with love by <a href="https://www.instagram.com/trahfitt" class="text-black fw-bold" style="text-decoration: none;">TRAH</a></p>
 </footer>
+
+<!-- js -->
+
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({});
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/TextPlugin.min.js"></script>
+
+<script>
+  gsap.registerPlugin(TextPlugin);
+  gsap.to('.lead', {duration: 2, delay: 1.5, text: 'Otodidak | Software Engineer' })
+  gsap.from('.jumbotron img', {duration: 1, y:-100, opacity: 0})
+</script>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
