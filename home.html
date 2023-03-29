@@ -56,7 +56,8 @@
 
   <img src="img/trah-ai.jpg" alt="trah ganteng" width="200px" class="rounded-circle img-thumbnail" >
   <h1 class="display-4">Muh. Fitrah Ramadhan</h1>
-  <p class="lead"></p>
+  <h3 class="lead"></h3>
+  <p data-aos="zoom-in" data-aos-delay="3000">"Ada saingan kita saingi haha."</p>
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
     <path fill="#fff" fill-opacity="1"
       d="M0,32L48,42.7C96,53,192,75,288,74.7C384,75,480,53,576,64C672,75,768,117,864,144C960,171,1056,181,1152,176C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
@@ -68,14 +69,14 @@
  
 <!-- about -->
 <section id="about">
-<div class="container" data-aos="fade-right" data-aos-offset="250" data-aos-duration="2000">
-  <div class="row mb-3">
+<div class="container">
+  <div class="row mb-3" data-aos="fade-right">
     <div class="col text-center">
       <h2>About Me</h2>
     </div>
   </div>
   <div class="row justify-content-center fs-5 text-center">
-    <div class="col-md-5">
+    <div class="col-md-5" data-aos="fade-up">
       <h5>Introduction</h5>
       <p>Hi, my name is Muhammad Fitrah Ramadhan. I aspire to be a skilled software engineer. I have  great interest in the world of technology and enjoy learning about programming languages and the latest technology. I believe that with hard work and a never-give-up attitude, I can overcome any challenge that comes my way. I am constantly seeking new opportunities to grow my skills and expand my knowledge. I am exited to continue on this journey and see where it takes me. Thank you for your time. </p>
       <br>
@@ -98,14 +99,14 @@
 
     <!-- projects -->
 <section id="projects">
-  <div class="container" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000">
+  <div class="container" data-aos-offset="200" data-aos-duration="1000">
     <div class="row mb-3">
-      <div class="col text-center">
+      <div class="col text-center" data-aos="fade-up">
          <h2>My Projects</h2>
       </div>
     </div>
     <div class="row justify-content-center">
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4" data-aos="zoom-out-right">
         <div class="card" >
           <img src="img/projects/projects1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -116,7 +117,7 @@
           </div>
         </div>
       </div>
-     <div class="col-md-4 mb-4">
+     <div class="col-md-4 mb-4"data-aos="zoom-in">
         <div class="card">
           <img src="img/projects/projects2.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -126,7 +127,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4" data-aos="zoom-in-left">
         <div class="card">
           <img src="img/projects/projects4.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -150,7 +151,7 @@
 <section id="contact">
   <div class="container">
     <div class="row mb-3">
-      <div class="col text-center">
+      <div class="col text-center" data-aos="fade-right">
         <h2>Contact Me</h2>
       </div>
     </div>
@@ -161,19 +162,19 @@
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
 <form name="trah-contact-form">
-  <div class="mb-3">
+  <div class="mb-3" data-aos="fade-up">
     <label for="name" class="form-label">Nama Lengkap</label>
     <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
    
-  <div class="mb-3">
+  <div class="mb-3" data-aos="fade-up">
     <label for="email" class="form-label">Email</label>
     <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
   </div>
-  <div class="mb-3">
+  <div class="mb-3" data-aos="fade-up">
     <label for="pesan" class="form-label">Pesan</label>
     <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
   </div>
-  <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
+  <button type="submit" class="btn btn-primary btn-kirim" data-aos="zoom-in">Kirim</button>
   <button class="btn btn-primary btn-loading d-none" type="button" disabled>
   <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true" ></span>
   Loading...
@@ -210,6 +211,7 @@
 <script>
   gsap.registerPlugin(TextPlugin);
   gsap.to('.lead', {duration: 2, delay: 1.5, text: 'Otodidak | Software Engineer' })
+
   gsap.from('.jumbotron img', {duration: 1, y:-100, opacity: 0})
 </script>
 
