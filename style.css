@@ -2,15 +2,45 @@ body{
 }
 
 
+.navbar {
+  background-color: #B9F3FC;
+}
+
+
 .jumbotron {
   padding-top: 5rem;
-  background-color: #e2edff;
+  background-color: #2E4F4F;
+  color: #ffffff;
 }
+
+.about {
+  background-color: #2C3333;
+  color: #ffffff;
+}
+
 
 #projects {
-  background-color: #e2edff;
+  background-color: #2E4F4F;
 }
 
+#projects h2 {
+  color: #ffffff;
+}
+
+.contact-me {
+  background-color: #2C3333;
+  color: #ffffff;
+}
+
+.footer {
+  background-color: #CBE4DE;
+}
+
+footer {
+margin-top: 10;
+}
+
+/* 
 section {
   padding-top: 5rem;
-}
+} */
