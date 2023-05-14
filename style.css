@@ -1,4 +1,6 @@
-body{
+
+:root{
+  scroll-behavior: smooth;
 }
 
 
@@ -19,11 +21,11 @@ body{
 }
 
 
-#projects {
+#galeri {
   background-color: #2E4F4F;
 }
 
-#projects h2 {
+#galeri h2 {
   color: #ffffff;
 }
 
@@ -31,16 +33,3 @@ body{
   background-color: #2C3333;
   color: #ffffff;
 }
-
-.footer {
-  background-color: #CBE4DE;
-}
-
-footer {
-margin-top: 10;
-}
-
-/* 
-section {
-  padding-top: 5rem;
-} */
