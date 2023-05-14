@@ -1,2 +1,2 @@
-My WEB Portfolio 
+web portfolio sederhana
 || IG: @ini.fitrah
